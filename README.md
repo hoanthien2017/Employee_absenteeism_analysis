@@ -58,9 +58,9 @@ View dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439
 ![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/a7baf9cd788b53b7eec3e7619ef68417a649babe/Dashboard%201%20(2).png)
 
 #### dashboard 1: Overview Absence Analysis 
-view dynamic [dashboard](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/a7baf9cd788b53b7eec3e7619ef68417a649babe/Dashboard%201%20(1).png)
+view dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439/viz/db1pj2/Dashboard1)
 
-![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/db6c5d87f4c95a8a4fff05c4f3c65dad8f74181d/db1.png)
+![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/837ca595c11ffb95121e592f0eed61e41eeecbc4/Dashboard%201%20(1).png)
 
 #### dashboard 2: Detailed Absence Analysis 
 view dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439/viz/db2pj2/Dashboard1)
