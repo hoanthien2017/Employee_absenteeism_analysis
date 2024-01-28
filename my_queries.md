@@ -202,7 +202,7 @@ from
 		com_and_exp
 ) as commuting_distance
 	join absence_infor a
-		on a.com_and_exp_id = commuting_dis.com_exp_id
+		on a.com_and_exp_id = commuting_distance.com_exp_id
 group by
 		dis_fr_res_group
 order by  
