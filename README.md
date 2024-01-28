@@ -55,16 +55,16 @@ Analyze whether compensation level affects absence rate. It helps in designing c
 #### Dashboard 0: Outlier Detection
 View dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439/viz/pj2distributiontesting/Dashboard1)
 
-![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/00151f9a6ca31105479d5372325340804cf292e5/Screenshot%202024-01-27%20220316.png)
+![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/a7baf9cd788b53b7eec3e7619ef68417a649babe/Dashboard%201%20(2).png)
 
 #### dashboard 1: Overview Absence Analysis 
-view dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439/viz/db1pj2/Dashboard1)
+view dynamic [dashboard](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/a7baf9cd788b53b7eec3e7619ef68417a649babe/Dashboard%201%20(1).png)
 
 ![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/db6c5d87f4c95a8a4fff05c4f3c65dad8f74181d/db1.png)
 
 #### dashboard 2: Detailed Absence Analysis 
 view dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439/viz/db2pj2/Dashboard1)
 
-![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/c72eef70234d44e71680a656fa0b85a0a3193190/db2.png)
+![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/f0dfd0234d24f7409b35e10ab56bcd161300609d/Dashboard%201.png)
 
 
