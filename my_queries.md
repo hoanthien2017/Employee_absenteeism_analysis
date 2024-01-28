@@ -254,7 +254,7 @@ select
 	when d.body_mass_index < 20 then 'thin'
 	when d.body_mass_index between 20 and 25 then 'normal'
 	else 'fat'
-	end as Weight Status
+	end as Weight_Status
 	, cast(avg(a.absence_time_hours) as decimal(10,2)) as avg_absence_hours
 from
 	demographics d
@@ -266,7 +266,7 @@ order by
 	avg_absence_hours
 ```
 **Results:**
-|Weight Status|	avg_absence_hours|
+|Weight_Status|	avg_absence_hours|
 |-------------|	-----------------|
 |thin|	4.20|
 |fat|	5.29|
