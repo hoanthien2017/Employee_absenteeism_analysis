@@ -97,7 +97,7 @@ group by
 select
 		month_of_absence
 	,	count(id) as total_absences
-	,	cast(avg(absence_time_hours) as decimal (10,2)) as avg_absence_time
+	,	cast(avg(absence_time_hours) as decimal (10,2)) as avg_absence_hours
 from
 	absence_infor 
 group by
@@ -109,7 +109,7 @@ avg_absence_time desc
 <details>
   <summary>Results</summary>
 
-|month_of_absence|	total_absences|	avg_absence_time|
+|month_of_absence|	total_absences|	avg_absence_hours|
 |----------------|	--------------|	----------------|
 |May|	60|	6.50|
 |June|	47|	6.43|
@@ -277,12 +277,9 @@ order by
 select
 	case 
 	when d.son = 0 then 'no children'
-	else 'have children'
+	when d.son between 1 and 2 then 'have 1-2 children'
+	else 'have 3-4 children'
 	end as son_num
-	,case 
-	when d.pet = 0 then 'no pet'
-	else 'have pet'
-	end as pet_num
 	, cast(avg(a.absence_time_hours) as decimal(10,2)) as avg_absence_hours
 from
 	demographics d
@@ -290,18 +287,17 @@ from
 		on d.demog_id = a.demog_id
 group by
 		son_num
-	,	pet_num
 order by 
 	avg_absence_hours 
 ;
+
 ```
 **Results:**
-|son_num|	pet_num|	avg_absence_hours|
-|-------|	-------|	-----------------|
-|no children|	have pet|	3.20|
-|no children|	no pet|	5.00|
-|have children|	have pet|	5.75|
-|have children|	no pet|	7.10|
+|son_num|	avg_absence_hours|
+|-------|	-----------------|
+|no children|	4.97|
+|have 1-2 children|	6.12|
+|have 3-4 children|	7.06|
 
 7 --absence time by social smoke and drink
 ```sql
