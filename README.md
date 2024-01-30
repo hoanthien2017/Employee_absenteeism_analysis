@@ -105,7 +105,6 @@ May, June, and July are months with the highest average number of absence hours 
 |laboratory examination | 31|5|
 |Diseases of the digestive system|	25|4|
 |Diseases of the respiratory system|	25|4|
-|December|	44|	4.84|
 </details>
  
 Employees aged 31-50 have absence hours ranging from 16 percent to 33.3 percent higher than those under 30 or over 50.
