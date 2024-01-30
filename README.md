@@ -51,12 +51,14 @@ Examine employee absence hours based on working factors. HR can adjust workloads
 #### 9. Compensation Influence on Absence
 Analyze whether compensation level affects absence rate. It helps in designing competitive compensation packages that motivate employees to maintain better attendance. Use SQL to divide compensation into 3 levels to access differences in employee absence by each level
 
-### Outlier Detection dashboard and data schema 
+### Outlier Detection dashboard and Data Schema 
 #### Dashboard 0: Outlier Detection
 View dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439/viz/pj2distributiontesting/Dashboard1)
 
 ![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/a7baf9cd788b53b7eec3e7619ef68417a649babe/Dashboard%201%20(2).png)
 
+### Data Schema
+![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/79a7422282d69a6b5249bc374faee8650fea1fb4/Screenshot%202024-01-30%20034422.png)
 
 ## Executive Summary
 ### Conclusion
