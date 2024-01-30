@@ -1,14 +1,14 @@
 # Employee_absenteeism_analysis
 # Analysis of the Effectiveness of Marketing Campaigns
 ## Introduction
-The purpose of the project is to analyze employee absence.
+The purpose of the project is to analyze employee absence of a company.
 ### Objective
 The project only analyzes data on employees who have ever taken a leave of absence and gives suggestions for human management strategy. The key focus areas include filtering deep relevant data, determining absence trends, identifying main factors on both professional and personal factors.
 ## Project Analysis
 ### Data preparation
 **Data cleaning**
--  Action: Adjust data format, standardize data format, use ifs function, create primary keys and foreign keys.
--  Outcome: Correct errors and inconsistencies in data The dataset is divided into 6 tables including: absence information, dynamics, compensation, demographics, commuting table, reasons with primary keys and foreign keys. 
+-  Action: Adjust data format, standardize data format,  create primary keys and foreign keys.
+-  Outcome: Correct errors and inconsistencies in data, The dataset is divided into 6 tables including: absence information, dynamics, compensation, demographics, commuting table, reasons with primary keys and foreign keys. 
 
 **Outlier Detection**
 -  Action: Use tableau to measure central tendency, distribution shape to highlight the key features of the data.
@@ -28,10 +28,10 @@ The project only analyzes data on employees who have ever taken a leave of absen
 Assess employee’s absence trend during months. Figure out the month and season that has the most absence hours. Employ SQL to group month and absence hours.
 
 #### 2. Top 10 reasons for employee absences 
-Investigate the most common absence reasons . HR can develop policies and interventions to address specific absence reasons and promote a healthier work environment.
+Investigate the most common absence reasons. HR can develop policies and interventions to address specific absence reasons and promote a healthier work environment.
 
 #### 3. Absence time by age groups 
-Explore the change of absence time trend over 4 age groups. HR can offer health and wellness programs specifically targeted at this age group.
+Explore the disparity of absence time over 4 age groups. HR can offer health and wellness programs specifically targeted at this age group.
 
 #### 4. Assessing to commuting impact
 Determine whether the distance from residence and transportation expenses are significant factors in employee absences. It is helpful in making policies that may include remote work options, flexible scheduling, or transportation subsidies. Use Case function on SQL to group commuting expenses and distance from home to work, access disparity in absence hour based on commuting factors.
@@ -40,7 +40,7 @@ Determine whether the distance from residence and transportation expenses are si
 Examine differences in absence rates based on body mass index. HR can design programs to address health concerns related to BMI, potentially reducing health-related absences. Use SQL to convey index score into 3 levels, and extract findings of absence hours based on these 3 levels.
 
 #### 6. Absence time based on son 
-Analyst how employee absence time changes between having kids and not having kids. Recognizing the impact of family and pet responsibilities on absence can help improve employee engagement. 
+Analyst how employee absence time changes between having kids and not having kids. Recognizing the impact of family responsibilities on absence can help improve employee engagement. 
 
 #### 7. Absence time by social smoke and drink
 Investigate the impact of unhealthy habits on absence rate. HR can create a workplace culture that promotes healthier lifestyles, potentially reducing the health-related absences of employees.
@@ -55,7 +55,7 @@ Analyze whether compensation level affects absence rate. It helps in designing c
 #### Dashboard 0: Outlier Detection
 View dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439/viz/pj2distributiontesting/Dashboard1)
 
-![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/a7baf9cd788b53b7eec3e7619ef68417a649babe/Dashboard%201%20(2).png)
+![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/e81803ba5f01f08542a8beee52f7cbe296f69fe1/Dashboard%201%20(3).png)
 
 ### Data Schema
 ![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/e6a530e9e85851845956c9c6b99bbf0df040d808/Screenshot%202024-01-27%20220316.png)
