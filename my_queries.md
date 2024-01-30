@@ -141,20 +141,22 @@ order by
 limit 10
 ;
 ```
-**Results:**
-	
-|reason| number_of_absence_cases|
-|------|------------------------|
-|medical consultation |	149|
-|dental consultation |	112|
-|physiotherapy |	68|
-|Diseases of the musculoskeletal system and connective tissue|	52|
-|patient follow-up |	38|
-|Injury, poisoning and certain other consequences of external causes|	35|
-|unjustified absence |	33|
-|laboratory examination | 31|
-|Diseases of the digestive system|	25|
-|Diseases of the respiratory system|	25|
+<details>
+  <summary>Results</summary>
+
+|reason| number_of_absence_cases| percentage_of_total_absences|
+|------|------------------------|-----------------------------|
+|medical consultation |	149|22|
+|dental consultation |	112|16|
+|physiotherapy |	68|10
+|Diseases of the musculoskeletal system and connective tissue|	52|8|
+|patient follow-up |	38|6|
+|Injury, poisoning and certain other consequences of external causes|	35|5|
+|unjustified absence |	33|5|
+|laboratory examination | 31|5|
+|Diseases of the digestive system|	25|4|
+|Diseases of the respiratory system|	25|4|
+</details>
 
 3-- absence time by age group 
 ```sql
