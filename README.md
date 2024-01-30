@@ -1,13 +1,13 @@
 # Employee_absenteeism_analysis
 # Analysis of the Effectiveness of Marketing Campaigns
 ## Introduction
-The purpose of the project is to analyze employee absence of a company.
+The purpose of the project is to analyze employee absence.
 ### Objective
-The project only analyzes data on employees who have ever taken a leave of absence and gives suggestions for human management strategy.  The key focus areas include filtering deep relevant data, determining absence trends, identifying main factors on both professional and personal factors.
+The project only analyzes data on employees who have ever taken a leave of absence and gives suggestions for human management strategy. The key focus areas include filtering deep relevant data, determining absence trends, identifying main factors on both professional and personal factors.
 ## Project Analysis
 ### Data preparation
 **Data cleaning**
--  Action: Adjust data format, standardize data format, use ifs function, use choose function to convert ordinal data to nominal data, create primary keys and foreign keys.
+-  Action: Adjust data format, standardize data format, use ifs function, create primary keys and foreign keys.
 -  Outcome: Correct errors and inconsistencies in data The dataset is divided into 6 tables including: absence information, dynamics, compensation, demographics, commuting table, reasons with primary keys and foreign keys. 
 
 **Outlier Detection**
@@ -49,7 +49,7 @@ Investigate the impact of unhealthy habits on absence rate. HR can create a work
 Examine employee absence hours based on working factors. HR can adjust workloads, set realistic targets, and implement strategies to eliminate employee absence. Combine service time, and workload per day, hit target to create professional scores from 1 to 10,  evaluate absence time based on the professional scores.
 
 #### 9. Compensation Influence on Absence
-Analyze whether compensation level affects absence rate. It helps in designing competitive compensation packages that motivate employees to maintain better attendance. Use SQL to divide compensation into 3 levels to access differences in employee absence by each level
+Analyze whether compensation level affects absence rate. It helps in designing competitive compensation packages that motivate employees to maintain better attendance. Use SQL to divide compensation into 3 levels to access differences in employee absence by each level.
 
 ### Outlier Detection dashboard and Data Schema 
 #### Dashboard 0: Outlier Detection
@@ -58,7 +58,7 @@ View dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439
 ![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/a7baf9cd788b53b7eec3e7619ef68417a649babe/Dashboard%201%20(2).png)
 
 ### Data Schema
-![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/79a7422282d69a6b5249bc374faee8650fea1fb4/Screenshot%202024-01-30%20034422.png)
+![image](https://github.com/hoanthien2017/Employee_absenteeism_analysis/blob/e6a530e9e85851845956c9c6b99bbf0df040d808/Screenshot%202024-01-27%20220316.png)
 
 ## Executive Summary
 ### Conclusion
