@@ -64,7 +64,6 @@ View dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439
 ### Conclusion
 March and February are months with the highest total hours of absence  (64-78 hours)
 - February and March can still be pretty cold and are often prone to snowstorms or other severe weather events, this can lead to transportation disruptions and safety concerns. 
-- This period would coincide with summer school vacations, which may require parents to take leave to care for children and engage in family activities.
 - Historically, flu activity peaks between December and February in the U.S., and possibly recovery could extend into March.
 
 <details>
