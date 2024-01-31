@@ -92,7 +92,7 @@ group by
 </details>
 
 # Data exploratory
-1 --Temporal Patterns and Seasonality in Absences--
+1 --Temporal Patterns and Seasonality in Absences
 ```sql
 select
 		month_of_absence
@@ -360,8 +360,6 @@ with professional_scores as (
 	dynamics d
 	join absence_infor a 
 		on d.dym_id = a.dym_id
-where 
-absence_time_hours <> 10
 )
 
 select
