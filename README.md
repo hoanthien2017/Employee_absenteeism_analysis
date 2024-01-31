@@ -85,7 +85,7 @@ March and February are months with the highest total hours of absence  (64-78 ho
 |April|	40	|3.58|
 </details>
  
-38 percent of employee absences are due to medical and dental consultations.
+40 percent of employee absences are due to medical and dental consultations.
 - People are more likely to regular check-ups and early treatment to prevent more serious health issues.
 - Many health insurance plans can cover regular medical and dental check-ups without significant out-of-pocket costs.
 
@@ -94,35 +94,34 @@ March and February are months with the highest total hours of absence  (64-78 ho
 
 |reason| number_of_absence_cases| percentage_of_total_absences|
 |------|------------------------|-----------------------------|
-|medical consultation |	149|22|
-|dental consultation |	112|16|
-|physiotherapy |	68|10
-|Diseases of the musculoskeletal system and connective tissue|	52|8|
-|patient follow-up |	38|6|
-|Injury, poisoning and certain other consequences of external causes|	35|5|
-|unjustified absence |	33|5|
-|laboratory examination | 31|5|
-|Diseases of the digestive system|	25|4|
-|Diseases of the respiratory system|	25|4|
+|medical consultation|	147|	23|
+|dental consultation|	110|	17|
+|physiotherapy|	68|	11|
+|Diseases of the musculoskeletal system and connective tissue|	38|	6|
+|patient follow-up|	37|	6|
+|unjustified absence|	32|	5|
+|laboratory examination|	31|	5|
+|Injury, poisoning and certain other consequences of external causes|	26|	4|
+|Diseases of the digestive system|	22|	3|
+|Diseases of the respiratory system|	21|	3|
 </details>
  
-Employees aged 31-50 have absence hours ranging from 16 percent to 33.3 percent higher than those under 30 or over 50.
-- Middle age is the peak period for family caregiving activities like child-rearing and caring for aging parents. On the other hand, they also deal with some onset of chronic health conditions.
-- Young age has less health problems as well as life responsibilities.
-- Over 50 people have less family duties.
+Employees over 50 have the highest average absence time that is  33.69 percent more than those aged 20-30 , and about 14 percent more than those aged 31-40 and 41-50. 
+- Health problems tend to increase in people over the age of 50 year, potentially causing to more frequent medical appointments.
+- Employees over 50 may be more stable in their careers and feel more secure in taking the necessary day off, whereas younger employees might focus more on building their career and reputation.
 
 <details>
   <summary>Results</summary>
  
 |age_group|	avg_absence_hours|
 |---------|	-----------------|
-|20-30|	4.62|
+|20-30|	3.74|
+|41-50|	4.38|
+|31-40|	4.41|
 |over 50|	5.00|
-|41-50|	5.80|
-|31-40|	6.16|
 </details>
  
-Employees with high transportation expenses have an average absence time that is 1.59 time higher than for those with low transportation expenses and 1.39 time higher than for those with medium transportation expenses.
+Employees with high transportation expenses have an average absence time that is 1.90 time higher than for those with low transportation expenses and 1.53 time higher than for those with medium transportation expenses.
 - Employees with high transportation expenses may have longer commute times that lead to stress, fatigue and exposure to potential accidents or delays.
 - Higher expenses can cause transportation challenges like unreliable public transport, the need for multiple transport modes, or travel during peak hours.
 
@@ -131,12 +130,12 @@ Employees with high transportation expenses have an average absence time that is
  
 |trans_exp_group|	absence_time_by_trans_exp|
 |---------------|	-------------------------|
-|high|	8.12|
-|medium|	5.86|
-|low|	5.10|
+|high|	6.77|
+|medium|	4.43|
+|low|	3.57|
 </details>
 
-Employees with children have a higher average absenteeism rate, ranging from 23 percent to 42 percent more compared to employees without children. 
+Employees with children have a higher average absenteeism rate, ranging from 18 percent to 49 percent more compared to employees without children. 
 - People with children would require more day off to attend to child-related needs, such as illnesses, school events, for childcare arrangements.
 - Parents, especially to those with several kids may lead to mental problems like stress and fatigue, that lead to need for mental health breaks.
 
@@ -145,12 +144,12 @@ Employees with children have a higher average absenteeism rate, ranging from 23 
  
 |son_num|	avg_absence_hours|
 |-------|	-----------------|
-|no children|	4.97|
-|have 1-2 children|	6.12|
-|have 3-4 children|	7.06|
+|no children|	3.76|
+|have 1-2 children|	4.44|
+|have 3-4 children|	5.59|
 </details>
 
-Employees who drink or smoke have an average absence time that is approximately a 50.57 percent greater than those who do neither.
+Employees who drink or smoke have an average absence time that is approximately a 20 percent greater than those who do neither.
 - Employees who have habits of smoking or drinking would deal with range of health issues that lead to time break for medical appointments or illnesses.
 - lifestyle with smoke and drink habit may involve behaviors like staying up late or socializing in ways that don't align with a regular work schedule.
 
@@ -159,11 +158,11 @@ Employees who drink or smoke have an average absence time that is approximately 
  
 |soc_dnk_smk|	avg_absence_hours|
 |-----------|	-----------------|
-|no drink and no smore|	4.37|
-|drink or smoke|	6.58|
+|no drink and no smore|	3.80|
+|drink or smoke|	4.55|
  </details>
 
-People with the highest professional score have an average absence time that is 4.5 times lower than those with the lowest professional score. 
+People with the highest professional score have an average absence time that is 3 times lower than those with the lowest professional score. 
 - Employees with high professional scores tend to perform higher job satisfaction, responsibility, and commitment.
 - High performance employees are more likely to receive more tangible rewards, which can their motivation to maintain attendance.
 - Employees with high professional scores would have goals for better professional development and career advancement, that powerful incentive to remain consistent work schedule and avoid taking leaves.
@@ -173,22 +172,23 @@ People with the highest professional score have an average absence time that is 
  
 |professional_score|	avg_absence_hours|
 |------------------|	-----------------|
-|5	|9|
-|6	|6|
-|8	|6|
-|7	|5|
-|9	|2|
+|3	|6|
+|4	|5|
+|6	|4|
+|7	|4|
+|5	|4|
+|8	|2|
  </details>
 
 ### Suggestions for Further Improvement
 1. Flexible Leave Policies:
-- Offer more flexible leave options during May, June, and July so employees can arrange their work and minimize   unexpected, unexplained absences.
+- launch flexible work policies during extreme weather months (February and March), such as remote shift , to eliminate weather-related absences.
 
 2. Workplace Health Services:
 - Provide periodic workplace health check-ups to eliminate time away to visit external healthcare facilities. Besides that, this is easier and more convenient for organizations to make schedules and avoid disruption.
 
-3. Family Support Policies:
-- Offer programs such as on-site childcare or financial support for childcare to support employees with young children. Adjusting flexible policies for employees with family caregiving responsibilities, like remote work, hybrid shift or shift work options, to accommodate caregiving needs.
+3. Age-Related Absences:
+- Offer healthcare programs tailored to age-related health concerns, especially for employees over 50, to reduce the higher absence rate due to potential health issues.
 
 4. Travel Assistance:
 - Partner with transportation services to minimize travel costs and commuting time for employees. Consider providing travel allowances or remote work options to reduce the daily commute requirement.
