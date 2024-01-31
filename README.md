@@ -62,28 +62,28 @@ View dynamic [dashboard](https://public.tableau.com/app/profile/thien.nguyen1439
 
 ## Executive Summary
 ### Conclusion
-May, June, and July are months with the highest average number of absence hours (6-6,5 hours)
-- These times are characterized by warmer weather and a common preference for vacationing. 
+March and February are months with the highest total hours of absence  (64-78 hours)
+- February and March can still be pretty cold and are often prone to snowstorms or other severe weather events, this can lead to transportation disruptions and safety concerns. 
 - This period would coincide with summer school vacations, which may require parents to take leave to care for children and engage in family activities.
-- May features Memorial Day and July includes Independence Day in the U.S., both significant holidays that may lead to employee absence.
+- Historically, flu activity peaks between December and February in the U.S., and possibly recovery could extend into March.
 
 <details>
   <summary>Results</summary>
 
 |month_of_absence|	total_absences|	avg_absence_hours|
 |----------------|	--------------|	----------------|
-|May|	60|	6.50|
-|June|	47|	6.43|
-|July|	60|	6.00|
-|October|	68|	5.87|
-|April|	44|	5.80|
-|March|	83|	5.70|
-|November|	59|	5.63|
-|August|	49|	5.49|
-|September|	50|	5.44|
-|January|	50|	5.38|
-|February|	68|	5.26|
-|December|	44|	4.84|
+|March|	78	|4.42|
+|February|	64	|4.22|
+|October|	62	|4.24|
+|November|	56	|4.50|
+|May|	55	|4.18|
+|July|	53	|4.23|
+|September|	49	|4.73|
+|August|	46	|4.46|
+|January|	46	|3.93|
+|June|	42	|4.14|
+|December|	42	|3.93|
+|April|	40	|3.58|
 </details>
  
 38 percent of employee absences are due to medical and dental consultations.
