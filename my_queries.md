@@ -358,8 +358,6 @@ with professional_scores as (
 		end as hit_target_score
 	from
 	dynamics d
-	join absence_infor a 
-		on d.dym_id = a.dym_id
 )
 
 select
