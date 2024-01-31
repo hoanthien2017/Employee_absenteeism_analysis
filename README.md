@@ -8,7 +8,7 @@ The project only analyzes data on employees who have ever taken a leave of absen
 ### Data preparation
 **Data cleaning**
 -  Action: Adjust data format, standardize data format,  create primary keys and foreign keys.
--  Outcome: Correct errors and inconsistencies in data, The dataset is divided into 6 tables including: absence information, dynamics, compensation, demographics, commuting table, reasons with primary keys and foreign keys. 
+-  Outcome: Use Excel to correct errors and inconsistencies in data, The dataset is divided into 6 tables including: absence information, dynamics, compensation, demographics, commuting table, reasons with primary keys and foreign keys. 
 
 **Outlier Detection**
 -  Action: Use tableau to measure central tendency, distribution shape to highlight the key features of the data.
