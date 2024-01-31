@@ -365,14 +365,12 @@ select
 	,	cast(avg(a.absence_time_hours) as int) as avg_absence_hours
 from
 	absence_infor a
-		join professional_scores p 
-		on a.dym_id = p.dym_id
-where 
-absence_time_hours <> 10
+	 join professional_scores p 
+	 on a.dym_id = p.dym_id
 group by
 		professional_score
 order by 
- avg_absence_hours desc
+ 		avg_absence_hours desc
 ;
 ```
 **Results:**
