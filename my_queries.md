@@ -159,7 +159,7 @@ limit 10
 |Diseases of the respiratory system|	25|4|
 </details>
 
-3-- absence time by age group 
+3-- Absence time by age group 
 ```sql
 select
 	case 
