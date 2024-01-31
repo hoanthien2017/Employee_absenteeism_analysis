@@ -350,7 +350,7 @@ with professional_scores as (
 		else 3
 		end as workload_score
 	
-	--the percentage of the goal achieved,
+	--the percentage of the goal achieved
 	,	case
 		when hit_target = 100  then 3
 		when hit_target between 95 and 99 then 2
