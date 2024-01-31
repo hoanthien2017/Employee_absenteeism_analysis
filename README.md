@@ -22,6 +22,10 @@ The project only analyzes data on employees who have ever taken a leave of absen
 -  Action: Use sql to isolate data that had zero absence hours.
 -  Outcome: Filter and remove 44 data that is recorded with zero absence hours.
 
+**Filter and remove ids recorded with more than 10 hours of absence per day**
+- Action: Use sql to isolate data that has more than 10 hours of absence per day.
+- Results: Filter and remove 40 ids recorded absent for more than 10 hours/day.
+
 ### Data exploratory 
 
 #### 1. Temporal Patterns and Seasonality in Absences
