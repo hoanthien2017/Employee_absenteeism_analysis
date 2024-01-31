@@ -138,7 +138,7 @@ from
 group by
 		r.reason
 order by
-	count(a.id) desc
+		number_of_absence_cases desc
 limit 10
 ;
 ```
@@ -250,7 +250,7 @@ order by
 |medium|	5.86|
 |low|	5.10|
 
-5 -- absence time by health factors
+5 -- absence time by BMI
 ```sql
 select
 	case 
@@ -264,7 +264,7 @@ from
 	join absence_infor a	
 		on d.demog_id = a.demog_id
 group by
-	health
+	Weight_Status
 order by 
 	avg_absence_hours
 ```
@@ -289,7 +289,7 @@ from
 	join absence_infor a	
 		on d.demog_id = a.demog_id
 group by
-		son_num
+	son_num
 order by 
 	avg_absence_hours 
 ;
@@ -387,7 +387,7 @@ select
 from
 	compensation c
 	join absence_infor a
-		on	c.comp_id = a.comp_id
+		on c.comp_id = a.comp_id
 group by
 	comp_group
 ;
