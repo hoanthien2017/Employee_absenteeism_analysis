@@ -130,6 +130,7 @@ avg_absence_time desc
 select
 		r.reason
 	,	count(a.id) as number_of_absence_cases
+ 	,	round((count(a.id) * 100.0) / sum(count(a.id)) over ()) as percentage_of_total_absences
 from
 	reasons r
 		 join absence_infor a
