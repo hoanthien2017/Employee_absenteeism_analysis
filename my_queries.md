@@ -103,7 +103,7 @@ from
 group by
 		month_of_absence
 order by
-avg_absence_time desc
+total_absences desc
 ;
 ```
 <details>
@@ -111,18 +111,18 @@ avg_absence_time desc
 
 |month_of_absence|	total_absences|	avg_absence_hours|
 |----------------|	--------------|	----------------|
-|May|	60|	6.50|
-|June|	47|	6.43|
-|July|	60|	6.00|
-|October|	68|	5.87|
-|April|	44|	5.80|
-|March|	83|	5.70|
-|November|	59|	5.63|
-|August|	49|	5.49|
-|September|	50|	5.44|
-|January|	50|	5.38|
-|February|	68|	5.26|
-|December|	44|	4.84|
+|March|	78	|4.42|
+|February|	64	|4.22|
+|October|	62	|4.24|
+|November|	56	|4.50|
+|May|	55	|4.18|
+|July|	53	|4.23|
+|September|	49	|4.73|
+|August|	46	|4.46|
+|January|	46	|3.93|
+|June|	42	|4.14|
+|December|	42	|3.93|
+|April|	40	|3.58|
 </details>
 
 2 --Top 10 common Reasons for absences 
@@ -147,16 +147,16 @@ limit 10
 
 |reason| number_of_absence_cases| percentage_of_total_absences|
 |------|------------------------|-----------------------------|
-|medical consultation |	149|22|
-|dental consultation |	112|16|
-|physiotherapy |	68|10
-|Diseases of the musculoskeletal system and connective tissue|	52|8|
-|patient follow-up |	38|6|
-|Injury, poisoning and certain other consequences of external causes|	35|5|
-|unjustified absence |	33|5|
-|laboratory examination | 31|5|
-|Diseases of the digestive system|	25|4|
-|Diseases of the respiratory system|	25|4|
+|medical consultation|	147|	23|
+|dental consultation|	110|	17|
+|physiotherapy|	68|	11|
+|Diseases of the musculoskeletal system and connective tissue|	38|	6|
+|patient follow-up|	37|	6|
+|unjustified absence|	32|	5|
+|laboratory examination|	31|	5|
+|Injury, poisoning and certain other consequences of external causes|	26|	4|
+|Diseases of the digestive system|	22|	3|
+|Diseases of the respiratory system|	21|	3|
 </details>
 
 3-- Absence time by age group 
@@ -183,10 +183,10 @@ order by
 
 |age_group|	avg_absence_hours|
 |---------|	-----------------|
-|20-30|	4.62|
+|20-30|	3.74|
+|41-50|	4.38|
+|31-40|	4.41|
 |over 50|	5.00|
-|41-50|	5.80|
-|31-40|	6.16|
 
 4 --Check if longer commute distances or higher transportation expenses impact absence time
 ```sql
@@ -209,16 +209,16 @@ from
 group by
 		dis_fr_res_group
 order by  
-	absence_time_by_dis desc
+	absence_time_by_distance desc
 ;
 ```
 **Results:**
 
 |dis_fr_res_group|	absence_time_by_distance|
 |----------------|	------------------------|
-|near|	6.14|
-|far|	6.03|
-|Moderate|	4.97|
+|near|	4.45|
+|far|	4.43|
+|Moderate|	3.85|
 
 ```sql
 select
@@ -229,7 +229,7 @@ from
 		com_exp_id	
 	,	trans_exp
 	,	case when trans_exp < 200 then 'low'
-			when trans_exp BETWEEN 200 AND 300 then 'medium'	
+			 when trans_exp between 200 and 300 then 'medium'	
 			else 'high'
 			end as trans_exp_group 
 	 	from
@@ -244,13 +244,14 @@ order by
 ;
 ```
 **Results:**
+
 |trans_exp_group|	absence_time_by_trans_exp|
 |---------------|	-------------------------|
-|high|	8.12|
-|medium|	5.86|
-|low|	5.10|
+|high|	6.77|
+|medium|	4.43|
+|low|	3.57|
 
-5 -- absence time by BMI
+5-- Absence time by BMI 
 ```sql
 select
 	case 
@@ -267,15 +268,16 @@ group by
 	Weight_Status
 order by 
 	avg_absence_hours
+;
 ```
 **Results:**
-|Weight_Status|	avg_absence_hours|
-|-------------|	-----------------|
-|thin|	4.20|
-|fat|	5.29|
-|normal|	6.35|
-	
-6 --absence time by son and pet
+|weight_status| avg_absence_hours|
+|-------------| -----------------|
+|thin|	2.85|
+|fat|	4.25|
+|normal|	4.43|
+
+6 --Absence time by kid caregiving factor
 ```sql
 select
 	case 
@@ -296,13 +298,14 @@ order by
 
 ```
 **Results:**
+
 |son_num|	avg_absence_hours|
 |-------|	-----------------|
-|no children|	4.97|
-|have 1-2 children|	6.12|
-|have 3-4 children|	7.06|
+|no children|	3.76|
+|have 1-2 children|	4.44|
+|have 3-4 children|	5.59|
 
-7 --absence time by social smoke and drink
+7 --Absence time by social smoke and drink
 ```sql
 select
 	case 
@@ -324,40 +327,52 @@ order by
 **Results:**
 |soc_dnk_smk|	avg_absence_hours|
 |-----------|	-----------------|
-|no drink and no smore|	4.37|
-|drink or smoke|	6.58|
+|no drink and no smore|	3.80|
+|drink or smoke|	4.55|
 
 8 -- Explore the relationship between service time, workload, target achievement, and absence time
 ```sql
 with professional_scores as (
 	select
-		dym_id
+		d.dym_id
+	
+	--the number of years working at the company
 	,	case
-		when service_time between 1 and 5 then 1
+		when service_time between 1 and 5 then 1 
 		when service_time between 5 and 15 then 2
 		else 3
-		end as service_time_score
+		end as service_time_score 
+	
+	--average daily workload
 	,	case
-		when workload_avg_day < 3  then 1
-		when workload_avg_day between 3 and 10 then 2
+		when workload_avg_day < 250 then 1
+		when workload_avg_day between 250 and 350 then 2
 		else 3
-		end as sworkload_avg_day 
+		end as workload_score
+	
+	--the percentage of the goal achieved,
 	,	case
 		when hit_target = 100  then 3
 		when hit_target between 95 and 99 then 2
 		else 1
 		end as hit_target_score
 	from
-	dynamics
+	dynamics d
+	join absence_infor a 
+		on d.dym_id = a.dym_id
+where 
+absence_time_hours <> 10
 )
 
 select
-		(p.service_time_score + p.sworkload_avg_day + p.hit_target_score) as professional_score
+		(p.service_time_score + p.workload_score + p.hit_target_score) as professional_score
 	,	cast(avg(a.absence_time_hours) as int) as avg_absence_hours
 from
 	absence_infor a
 		join professional_scores p 
 		on a.dym_id = p.dym_id
+where 
+absence_time_hours <> 10
 group by
 		professional_score
 order by 
@@ -368,13 +383,14 @@ order by
 
 |professional_score|	avg_absence_hours|
 |------------------|	-----------------|
-|5	|9|
-|6	|6|
-|8	|6|
-|7	|5|
-|9	|2|
+|3	|6|
+|4	|5|
+|6	|4|
+|7	|4|
+|5	|4|
+|8	|2|
 
-9--Compensation Influence on Absence:
+9--Compensation Influence on Absence
 ```sql
 select
 		case 
@@ -396,6 +412,6 @@ group by
 
 |comp_group|	avg_absence_hours|
 |----------|	-----------------|
-|under 30|	5.39|
-|30-40|	5.42|
-|40-55|	6.06|
+|under 30|	4.06|
+|30-40|	4.15|
+|40-55|	4.39|
