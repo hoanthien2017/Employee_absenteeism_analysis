@@ -24,7 +24,7 @@ The project only analyzes data on employees who have ever taken a leave of absen
 
 **Filter and remove ids recorded with more than 10 hours of absence per day**
 - Action: Use sql to isolate data that has more than 10 hours of absence per day.
-- Results: Filter and remove 40 ids recorded absent for more than 10 hours/day.
+- Outcome: Filter and remove 40 ids recorded absent for more than 10 hours/day.
 
 ### Data exploratory 
 
