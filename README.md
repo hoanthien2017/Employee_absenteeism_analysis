@@ -1,5 +1,4 @@
 # Analysis of Employee Absenteeism
-# Analysis of the Effectiveness of Marketing Campaigns
 ## Introduction
 The purpose of the project is to analyze employee absence of a company.
 ### Objective
