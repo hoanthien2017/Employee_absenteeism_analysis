@@ -1,8 +1,8 @@
 # Analysis of Employee Absenteeism
-## Introduction
-The purpose of the project is to analyze employee absence of a company.
+## Project Recap
+The manager want to analyze employee absence to gives suggestions for human management strategy.
 ### Objective
-The project only analyzes data on employees who have ever taken a leave of absence and gives suggestions for human management strategy. The key focus areas include filtering deep relevant data, determining absence trends, identifying main factors on both professional and personal factors.
+The project only analyzes data on employees who have ever taken a leave of absence. The key focus areas include filtering deep relevant data, determining absence trends, identifying main factors on both professional and personal factors.
 ## Project Analysis
 ### Data preparation
 **Data cleaning**
